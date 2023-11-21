@@ -861,6 +861,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * --------------------------------------------------------------------- 
  */
+ .img-with-border {
+	border: 5px solid #757474;
+	margin: 10px;
+  }
+  
 .pull-quote {
 	position: relative;
 	padding: 2.1rem 3rem 2.1rem 0px;
