@@ -1119,9 +1119,6 @@ header .logo a {
 	text-shadow: none;
 	color: inherit; /* Change 'color: transparent;' to 'color: inherit;' */
   }
-  
-  /* Remove background-related properties */
-  
 
 /**
  * menu toggle - (_layout.css)
