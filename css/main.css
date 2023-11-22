@@ -1115,14 +1115,13 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
+	font: inherit; /* Change 'font: 0/0 a;' to 'font: inherit;' */
 	text-shadow: none;
-	color: transparent;
-	width: 92px;
-	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
-}
+	color: inherit; /* Change 'color: transparent;' to 'color: inherit;' */
+  }
+  
+  /* Remove background-related properties */
+  
 
 /**
  * menu toggle - (_layout.css)
