@@ -1574,9 +1574,14 @@ header .logo a {
 .button-section .button {
 	width: 250px;
 }
-.button-section [class*="col-"] .button:first-child {
-	margin-right: 4rem;
+.button-section [class*="col-"] .button {
+    margin-right: 2rem; /* Adjust the margin as needed */
 }
+
+.button-section [class*="col-"] .button:last-child {
+    margin-right: 0; /* Remove the margin for the last button */
+}
+
 
 /**
  * responsive:
