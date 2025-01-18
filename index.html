@@ -333,58 +333,64 @@
         </div>
     </div>
 
-    <div class="row project-timeline">
+    <!-- Detailed Project Explanation Section -->
+    <div class="row project-details">
         <div class="col-twelve">
-            <h2>Pipeline Workflow</h2>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-git"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Git Commit</h4>
-                        <p>The pipeline starts when a developer commits code to the Git repository.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-cogs"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Build AMI</h4>
-                        <p>GitHub Actions runs a Packer job to create a golden AMI of the application, ensuring a stable deployment base.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-cloud"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Provision Infrastructure</h4>
-                        <p>GitHub Actions triggers a Terraform job that provisions AWS resources, including the Load Balancer, Target Groups, Security Groups, and Auto-scaling Groups.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-play"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Content Deployment</h4>
-                        <p>GitHub Actions runs an Ansible job that updates website content on running instances without downtime.</p>
-                    </div>
-                </li>
+            <h2>About the CI/CD Pipeline</h2>
+            <p>
+                The CI/CD pipeline in this project automates the deployment process, ensuring a seamless flow from development to production with minimal manual intervention. By leveraging tools like GitHub Actions, Packer, Terraform, and Ansible, the pipeline is capable of deploying applications in AWS environments efficiently and reliably. Here is how each tool contributes:
+            </p>
+            <ul>
+                <li><strong>GitHub Actions:</strong> Automates the build, test, and deployment processes. It triggers the pipeline on code commits and pull requests.</li>
+                <li><strong>Packer:</strong> Creates an immutable infrastructure by building a custom AMI (Amazon Machine Image) for the application, ensuring consistency across deployments.</li>
+                <li><strong>Terraform:</strong> Manages and provisions AWS infrastructure such as EC2 instances, load balancers, and auto-scaling groups.</li>
+                <li><strong>Ansible:</strong> Automates the configuration management, ensuring that the latest version of the application is deployed across the instances without downtime.</li>
             </ul>
+            <p>
+                The goal is to achieve zero downtime deployments, ensuring that updates are rolled out smoothly without affecting the user experience.
+            </p>
         </div>
     </div>
 
-    <!-- Flow Diagram Section with Button and Alignment Fix -->
+    <!-- Screenshots or Images of Each Step -->
+    <div class="row project-screenshots">
+        <div class="col-twelve">
+            <h2>Pipeline Overview</h2>
+            <p>Here is a graphical overview of how the CI/CD pipeline operates:</p>
+            <div class="image-gallery">
+                <img src="images/overview1.jpg" alt="Pipeline Overview Step 1" style="max-width: 48%; margin-right: 4%; border-radius: 8px;">
+                <img src="images/overview2.jpg" alt="Pipeline Overview Step 2" style="max-width: 48%; border-radius: 8px;">
+            </div>
+            <p>
+                The first image shows the pipeline at the initial stage of triggering GitHub Actions, while the second image illustrates the deployment of infrastructure with Terraform.
+            </p>
+        </div>
+    </div>
+
+    <!-- Detailed Step-by-Step Diagram -->
     <div class="row flow-diagram-section">
         <div class="col-twelve">
             <h2>Pipeline Flow Diagram</h2>
-            <p>Click below to expand and view the CI/CD pipeline flow diagram:</p>
-            
-            <!-- Flex container to align all buttons together -->
+            <p>Click below to expand and view the CI/CD pipeline flow diagram, which outlines the entire process in more detail:</p>
             <div class="button-container" style="display: flex; justify-content: center; gap: 10px;">
                 <button class="button button-primary" onclick="toggleDiagram()">Toggle Flow Diagram</button>
                 <a href="https://github.com/bibin567/My-CICD-Pipeline.git" title="View on GitHub" class="button button-primary">View Code</a>
                 <a href="#contact" title="Contact Me" class="button button-primary">Contact Me</a>
             </div>
-            
+
             <div id="flowDiagram" style="display:none; margin-top: 20px;">
                 <img src="images/DB.jpg" alt="CI/CD Pipeline Flow Diagram" style="max-width: 100%; height: auto; border-radius: 8px;">
             </div>
+        </div>
+    </div>
+
+    <!-- Final Call to Action Section -->
+    <div class="row button-section">
+        <div class="col-twelve">
+            <h2>Get Involved</h2>
+            <p>If you're interested in contributing to this project, or if you want to discuss how to implement a similar CI/CD pipeline in your environment, feel free to reach out!</p>
+            <a href="https://github.com/bibin567/My-CICD-Pipeline.git" title="View on GitHub" class="button button-primary">View Code</a>
+            <a href="#contact" title="Contact Me" class="button button-primary">Contact Me</a>
         </div>
     </div>
 </section>
@@ -400,6 +406,32 @@
         }
     }
 </script>
+
+<!-- Add CSS for image gallery and styling -->
+<style>
+    .image-gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .button-container {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .row.button-section {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .button {
+        display: inline-block;
+    }
+</style>
+
 
 
 
