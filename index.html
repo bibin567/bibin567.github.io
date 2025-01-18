@@ -337,46 +337,26 @@
         <div class="col-twelve">
             <h2>Pipeline Workflow</h2>
             <ul class="timeline">
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-git"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Git Commit</h4>
-                        <p>The pipeline starts when a developer commits code to the Git repository.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-cogs"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Build AMI</h4>
-                        <p>GitHub Actions runs a Packer job to create a golden AMI of the application, ensuring a stable deployment base.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-cloud"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Provision Infrastructure</h4>
-                        <p>GitHub Actions triggers a Terraform job that provisions AWS resources, including the Load Balancer, Target Groups, Security Groups, and Auto-scaling Groups.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-badge"><i class="fa fa-play"></i></div>
-                    <div class="timeline-panel">
-                        <h4>Content Deployment</h4>
-                        <p>GitHub Actions runs an Ansible job that updates website content on running instances without downtime.</p>
-                    </div>
-                </li>
+                <!-- Timeline content here -->
             </ul>
         </div>
     </div>
 
-    <!-- Flow Diagram Section -->
+    <!-- Flow Diagram Section with Button -->
     <div class="row flow-diagram-section">
         <div class="col-twelve">
             <h2>Pipeline Flow Diagram</h2>
-            <p>Below is a visual representation of the CI/CD pipeline flow from code commit to deployment:</p>
-            <div class="diagram-container" style="text-align:center; margin-top: 30px;">
-                <img src="images/DB.jpg" alt="CI/CD Pipeline Flow Diagram" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            </div>
+            <p>Click the button below to view the CI/CD pipeline flow diagram:</p>
+            <button id="viewDiagramBtn" class="button button-primary" onclick="openModal()">View Flow Diagram</button>
+        </div>
+    </div>
+
+    <!-- Modal for Flow Diagram -->
+    <div id="flowDiagramModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Pipeline Flow Diagram</h3>
+            <img src="images/DB.jpg" alt="CI/CD Pipeline Flow Diagram" style="max-width: 100%; height: auto; border-radius: 8px;">
         </div>
     </div>
 
@@ -387,6 +367,66 @@
         </div>
     </div>
 </section>
+
+<!-- Add some basic CSS for the modal -->
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 8px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<!-- Add JavaScript to handle the modal functionality -->
+<script>
+    // Function to open the modal
+    function openModal() {
+        document.getElementById("flowDiagramModal").style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        document.getElementById("flowDiagramModal").style.display = "none";
+    }
+
+    // Close the modal if the user clicks anywhere outside of it
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("flowDiagramModal")) {
+            closeModal();
+        }
+    }
+</script>
+
 
 
 	<section id="portfolio">
