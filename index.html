@@ -232,29 +232,29 @@
                             <li>
                                 <p><u style="border-bottom: 1px dotted #ccc;">Next Gen Engineering</u></p>
                                 <p>Aug 2023 – Present</p>
-                                <p>Currently working as a Linux System Engineer at Accenture UK & Ireland in the Next Gen Engineering team. Responsible for shaping and implementing innovative solutions to drive digital transformation.</p>
+                                <p>Currently working as a DevOps Engineer at Accenture UK & Ireland in the Next Gen Engineering team. Responsible for shaping and implementing innovative solutions to drive digital transformation.</p>
                             </li>
                             <li>
                                 <p><u style="border-bottom: 1px dotted #ccc;">Infinity Works Part of Accenture</u></p>
                                 <p>Jan 2022 – Sep 2023</p>
-                                <p>Served as a Linux System Engineer at Infinity Works, contributing to projects involving Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Played a key role in building robust and scalable infrastructure solutions.</p>
+                                <p>Served as a DevOps  Engineer at Infinity Works, contributing to projects involving Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Played a key role in building robust and scalable infrastructure solutions.</p>
                             </li>
                         </ul>
                     </div>
                 </div> <!-- /timeline-block -->
 
-                <!-- Entry 2 - Systems Engineer -->
+                <!-- Entry 2 - Senior Systems Engineer -->
                 <div class="timeline-block">
                     <div class="timeline-ico">
                         <i class="fa fa-briefcase"></i>
                     </div>
                     <div class="timeline-header">
-                        <h3>Linux Systems Engineer</h3>
+                        <h3>Senior Systems Engineer</h3>
                         <p>02/2019 – 12/2021</p>
                     </div>
                     <div class="timeline-content">
                         <h4>Geojit Financial Services Ltd, India</h4>
-                        <p>Contributed as a Systems Engineer at Geojit Financial Services Ltd, working extensively with Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Implemented efficient and scalable infrastructure solutions.</p>
+                        <p>Contributed as a Senior Systems Engineer at Geojit Financial Services Ltd, working extensively with Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Implemented efficient and scalable infrastructure solutions.</p>
                     </div>
                 </div> <!-- /timeline-block -->
 
@@ -337,12 +337,39 @@
         <div class="col-twelve">
             <h2>Pipeline Workflow</h2>
             <ul class="timeline">
-                <!-- Timeline content here -->
+                <li>
+                    <div class="timeline-badge"><i class="fa fa-git"></i></div>
+                    <div class="timeline-panel">
+                        <h4>Git Commit</h4>
+                        <p>The pipeline starts when a developer commits code to the Git repository.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="fa fa-cogs"></i></div>
+                    <div class="timeline-panel">
+                        <h4>Build AMI</h4>
+                        <p>GitHub Actions runs a Packer job to create a golden AMI of the application, ensuring a stable deployment base.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="fa fa-cloud"></i></div>
+                    <div class="timeline-panel">
+                        <h4>Provision Infrastructure</h4>
+                        <p>GitHub Actions triggers a Terraform job that provisions AWS resources, including the Load Balancer, Target Groups, Security Groups, and Auto-scaling Groups.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="fa fa-play"></i></div>
+                    <div class="timeline-panel">
+                        <h4>Content Deployment</h4>
+                        <p>GitHub Actions runs an Ansible job that updates website content on running instances without downtime.</p>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
 
-    <!-- Collapsible Flow Diagram Section -->
+    <!-- Flow Diagram Section with Button -->
     <div class="row flow-diagram-section">
         <div class="col-twelve">
             <h2>Pipeline Flow Diagram</h2>
