@@ -375,21 +375,16 @@
             <h2>Pipeline Flow Diagram</h2>
             <p>Click below to expand and view the CI/CD pipeline flow diagram:</p>
             
-            <!-- Button container to align buttons consistently -->
-            <div class="button-container">
+            <!-- Flex container to align all buttons together -->
+            <div class="button-container" style="display: flex; justify-content: center; gap: 10px;">
                 <button class="button button-primary" onclick="toggleDiagram()">Toggle Flow Diagram</button>
+                <a href="https://github.com/bibin567/My-CICD-Pipeline.git" title="View on GitHub" class="button button-primary">View Code</a>
+                <a href="#contact" title="Contact Me" class="button button-primary">Contact Me</a>
             </div>
             
             <div id="flowDiagram" style="display:none; margin-top: 20px;">
                 <img src="images/DB.jpg" alt="CI/CD Pipeline Flow Diagram" style="max-width: 100%; height: auto; border-radius: 8px;">
             </div>
-        </div>
-    </div>
-
-    <div class="row button-section">
-        <div class="col-twelve">
-            <a href="https://github.com/bibin567/My-CICD-Pipeline.git" title="View on GitHub" class="button button-primary">View Code</a>
-            <a href="#contact" title="Contact Me" class="button button-primary">Contact Me</a>
         </div>
     </div>
 </section>
@@ -406,23 +401,6 @@
     }
 </script>
 
-<!-- Add CSS to ensure proper button alignment -->
-<style>
-    .button-container {
-        display: inline-block;
-        margin-bottom: 20px; /* Adds space between buttons and the diagram */
-    }
-
-    .row.button-section {
-        display: flex;
-        justify-content: center; /* Centers the buttons horizontally */
-        gap: 10px; /* Adds space between buttons */
-    }
-
-    .button {
-        display: inline-block;
-    }
-</style>
 
 
 <!-- Portfolio Section
