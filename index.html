@@ -319,7 +319,7 @@
 </section> <!-- /features -->
 
 
-	<!-- Portfolio Section
+	<!-- Project Section
    ================================================== -->
 
    <section id="cicd-project" class="grey-section">
@@ -369,12 +369,17 @@
         </div>
     </div>
 
-    <!-- Flow Diagram Section with Button -->
+    <!-- Flow Diagram Section with Button and Alignment Fix -->
     <div class="row flow-diagram-section">
         <div class="col-twelve">
             <h2>Pipeline Flow Diagram</h2>
             <p>Click below to expand and view the CI/CD pipeline flow diagram:</p>
-            <button class="button button-primary" onclick="toggleDiagram()">Toggle Flow Diagram</button>
+            
+            <!-- Button container to align buttons consistently -->
+            <div class="button-container">
+                <button class="button button-primary" onclick="toggleDiagram()">Toggle Flow Diagram</button>
+            </div>
+            
             <div id="flowDiagram" style="display:none; margin-top: 20px;">
                 <img src="images/DB.jpg" alt="CI/CD Pipeline Flow Diagram" style="max-width: 100%; height: auto; border-radius: 8px;">
             </div>
@@ -401,7 +406,27 @@
     }
 </script>
 
+<!-- Add CSS to ensure proper button alignment -->
+<style>
+    .button-container {
+        display: inline-block;
+        margin-bottom: 20px; /* Adds space between buttons and the diagram */
+    }
 
+    .row.button-section {
+        display: flex;
+        justify-content: center; /* Centers the buttons horizontally */
+        gap: 10px; /* Adds space between buttons */
+    }
+
+    .button {
+        display: inline-block;
+    }
+</style>
+
+
+<!-- Portfolio Section
+   ================================================== -->
 
 	<section id="portfolio">
 
