@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>bibin.joy</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header ================================================== -->
+<header>
+	<div class="row">
+	  <div class="top-bar">
+		<a class="menu-toggle" href="#"><span>Menu</span></a>
+		<div class="logo">
+		  <a href="index.html">Menu</a>
+		</div>
+		<nav id="main-nav-wrap">
+		  <ul class="main-navigation">
+			<li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+			<li><a class="smoothscroll" href="#about" title="">About</a></li>
+			<li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
+			<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
+			<li><a class="smoothscroll" href="#services" title="">Certifications</a></li>
+			<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+		  </ul>
+		</nav>
+	  </div> <!-- /top-bar -->
+	</div> <!-- /row -->
+  </header> <!-- /header -->
+  
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+    <div class="intro-overlay"></div>  
+
+    <div class="intro-content">
+        <div class="row">
+
+            <div class="col-twelve">
+
+                <!-- Profile Picture in the Middle -->
+                <div class="intro-profile-container">
+                    <img class="intro-profile-pic" src="images/profile-pic.jpg" alt="Profile Picture">
+                </div>
+
+                <h5>Hello, World.</h5>
+                <h1>I'm Bibin Joy.</h1>
+
+                <p class="intro-position">
+		    <span>DevOps Engineer</span>
+                    <span>Linux System Engineer</span>
+                </p>
+
+                <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+            </div>    
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://www.facebook.com/profile.php?id=100010407793977"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/bibyn/"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="https://instagram.com/b_ibyn?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Venturing into the DevOps Frontier.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/pro2.jpg" alt="Profile Picture">
+
+   				<p class="lead">Greetings! I'm driven by an unwavering passion for technology, specializing in AWS and diverse cloud services. Journey with me through the realms of a emerging DevOps enthusiast and a seasoned Linux professional.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Enthusiastic IT professional with expertise in AWS, Terraform, collaborative problem solver, dedicated to innovation.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Bibin Joy</span>
+   				</li>
+   				<li>
+   					<strong>Birth Date:</strong>
+   					<span>May 11, 1992</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Linux System Engineer, DevOps Engineer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>bibin.uk</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>bibynjoy@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			<p>Proficient in a variety of technical and soft skills that contribute to successful project execution and collaboration.</p>
+
+			   <ul class="skill-bars">
+				<li>
+					<div class="progress percent75"><span>75%</span></div>
+					<strong>AWS</strong>
+				</li>
+				<li>
+					<div class="progress percent80"><span>80%</span></div>
+					<strong>Terraform</strong>
+				</li>
+				<li>
+					<div class="progress percent90"><span>90%</span></div>
+					<strong>Linux</strong>
+				</li>
+				<li>
+					<div class="progress percent65"><span>65%</span></div>
+					<strong>CI-CD</strong>
+				</li>
+				<li>
+					<div class="progress percent65"><span>65%</span></div>
+					<strong>Docker</strong>
+				</li>
+				<li>
+					<div class="progress percent75"><span>75%</span></div>
+					<strong>Github Pages</strong>
+				</li>
+			</ul> <!-- /skill-bars -->
+					
+
+   		</div>
+
+   	</div>
+
+	   <div class="row button-section">
+		<div class="col-twelve">
+			<a href="#contact" title="Hire Me" class="button button-primary">Hire Me</a>
+			<a href="https://drive.google.com/file/d/1USJJGkTr6C6X5attHP1PUVPp0BenfGuX/view?usp=sharing" title="Download CV" class="button button-primary">Download CV</a>
+			<a href="https://projects-gitlab-io-bibin9602250-655d30765451eb2ed86853a9cd5c45e.gitlab.io" title="My Projects" class="button button-primary">My Projects</a>
+		</div>   		
+	</div>
+	
+	
+
+   </section> <!-- /process-->    
+
+
+   <!-- Resume Section -->
+<section id="resume" class="grey-section">
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h5>Resume</h5>
+            <h1>Explore More of My Credentials.</h1>
+            <p class="lead">Welcome to my professional journey! Below, you'll find a timeline highlighting key milestones in my career. Each role has contributed to my growth and expertise in diverse areas. Let's dive into the experiences that shape my professional profile.</p>
+        </div>
+    </div> <!-- /section-intro-->
+
+    <!-- Work Experience -->
+    <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+            <h2>Work Experience</h2>
+        </div> <!-- /resume-header -->
+
+        <div class="col-twelve">
+            <div class="timeline-wrap">
+                <!-- Entry 1 -->
+                <div class="timeline-block">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <h3>DevOps Engineer</h3>
+                        <p>01/2022 – Present</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Accenture, London, UK</h4>
+                        <ul>
+                            <li>
+                                <p><u style="border-bottom: 1px dotted #ccc;">Next Gen Engineering</u></p>
+                                <p>Aug 2023 – Present</p>
+                                <p>Currently working as a Linux System Engineer at Accenture UK & Ireland in the Next Gen Engineering team. Responsible for shaping and implementing innovative solutions to drive digital transformation.</p>
+                            </li>
+                            <li>
+                                <p><u style="border-bottom: 1px dotted #ccc;">Infinity Works Part of Accenture</u></p>
+                                <p>Jan 2022 – Sep 2023</p>
+                                <p>Served as a Linux System Engineer at Infinity Works, contributing to projects involving Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Played a key role in building robust and scalable infrastructure solutions.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- /timeline-block -->
+
+                <!-- Entry 2 - Systems Engineer -->
+                <div class="timeline-block">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <h3>Linux Systems Engineer</h3>
+                        <p>02/2019 – 12/2021</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Geojit Financial Services Ltd, India</h4>
+                        <p>Contributed as a Systems Engineer at Geojit Financial Services Ltd, working extensively with Amazon Web Services, Terraform, Jenkins CI/CD, Docker, Linux Server Administration, and Pulumi. Implemented efficient and scalable infrastructure solutions.</p>
+                    </div>
+                </div> <!-- /timeline-block -->
+
+                <!-- Entry 3 - Network Engineer -->
+                <div class="timeline-block">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <h3>NOC Engineer</h3>
+                        <p>03/2016 – 06/2018</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Layer 3 Global LLC, India</h4>
+                        <p>Served as a Network Engineer at Layer 3 Global LLC, focusing on network design, implementation, and maintenance. Played a crucial role in optimizing network performance and ensuring seamless connectivity.</p>
+                    </div>
+                </div> <!-- /timeline-block -->
+
+                <!-- Entry 4 - Junior Network Engineer -->
+                <div class="timeline-block">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <h3>Junior Network Engineer</h3>
+                        <p>12/2014 – 03/2016</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Akshaya Government Project, India</h4>
+                        <p>Contributed as a Network Engineer for the Akshaya Government Project. Responsible for designing, implementing, and maintaining network infrastructure to support the project's objectives.</p>
+                    </div>
+                </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->
+        </div> <!-- /col-twelve -->
+    </div> <!-- /resume-timeline -->
+
+    <!-- Education -->
+    <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+            <h2>Education</h2>
+        </div> <!-- /resume-header -->
+
+        <div class="col-twelve">
+            <div class="timeline-wrap">
+                <!-- Education Entry -->
+                <div class="timeline-block">
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <h3>Bachelor Degree- Information Technology</h3>
+                        <p>June 2010 - May 2014</p>
+                    </div>
+                    <div class="timeline-content">
+                        <h4>Ilahia College of Engineering & Technology</h4>
+                        <p>Earned a Bachelor's in IT, fostering a robust base in computer science. Explored software dev, data structures, and networks. Actively engaged in coding, enhancing analytical skills.</p>
+                    </div>
+                </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->
+        </div> <!-- /col-twelve -->
+    </div> <!-- /resume-timeline -->
+</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>My Passions</h5>
+   			<p> Photography is not just a skill; it's my passion, my hobby, and how I choose to spend my free time. In addition to photography, I enjoy watching movies and traveling. 
+			</p>
+			   <h1>Check Out Some of My Clicks.</h1>
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/liberty.jpg" alt="O2 arena">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">O2 Arena</h3>	     					    
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/shutterbug.jpg" alt="safaripark">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Safari Park</h3>	     					    	     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/clouds.jpg"alt="Seven Sisters Cliff">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Seven Sisters Cliff</h3>	     					    	     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Portsmouth</h3>	     					    		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Durdle Door">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Durdle Door</h3>	     					    	     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Cornwall">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Cornwall</h3>	     					    	     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>O2 Arena</h4>		      
+					      <p>Captured the iconic O2 Arena from the heights of IFS Cloud Cable Car, Greenwich, London's charm.</p>		               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.theo2.co.uk/visit-us/getting-to-the-o2/cable-car">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>West Midlands Safari Park</h4>		      
+					      <p>Majestic camel at West Midlands Safari Park, embodying grace and serenity in the wild expanse.</p>
+		               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.wmsp.co.uk/">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Seven Sisters Cliff</h4>		      
+					      <p>Nature's masterpiece: Seven Sisters Cliff, where rugged beauty meets the endless dance of sea and sky.</p>
+               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.sevensisters.org.uk/">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Portsmouth</h4>		      
+					      <p>Serenity at sea: A cruise gracefully glides by the iconic Spinnaker Tower in Portsmouth's harbor.</p>
+			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.spinnakertower.co.uk/">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Durdle Door</h4>		      
+					      <p>Capturing coastal magic at Durdle Door, where ancient cliffs frame the dance of waves and sunlight.</p>
+	               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.visit-dorset.com/listing/durdle-door/126276301/">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Cornwall</h4>		      
+					      <p>Cascading wonders at Tintagel Castle: Nature's poetry in Cornwall, where waterfalls harmonize with ancient beauty.</p>
+		               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.english-heritage.org.uk/visit/places/tintagel-castle/">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+	
+	
+	<!-- services Section
+   ================================================== -->
+   <section id="services">
+
+    <div class="overlay"></div>
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Training and Certification</h5>
+
+            <p class="lead">Explore my training and certifications that demonstrate a commitment to staying current and continually enhancing expertise.</p>
+
+        </div>
+    </div> <!-- /section-intro -->
+
+    <div class="row services-content">
+
+        <div id="owl-slider" class="owl-carousel services-list">
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+
+                    <h3>AWS Certified SysOps Administrator- Associate</h3>
+					<a href="https://www.credly.com/badges/ceaba14f-a76a-49d4-9d43-59262554d431/public_url" target="_blank">
+                    <img src="images/portfolio/sysops.jpg" alt="AWS Certified SysOps Administrator- Associate Image">
+				    </a>
+                </div>
+
+            </div> <!-- /service -->
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+					<h3>AWS Certified Solutions Architect- Associate</h3>
+					<a href="https://www.credly.com/badges/17610d4f-2b29-49d7-a8fa-3d0a9bb4f7f8/public_url" target="_blank">
+						<img src="images/portfolio/solution.jpg" alt="AWS Certified Solutions Architect- Associate Image">
+					</a>
+				</div>
+				
+
+            </div> <!-- /service -->
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+
+                    <h3>Red Hat Certified Engineer (RHCE)</h3>
+					<a href="https://rhtapps.redhat.com/verify/?certId=" target="_blank">
+                    <img src="images/portfolio/rhce.jpg" alt="Red Hat Certified Engineer (RHCE) Image">
+				    </a>
+                </div>
+
+            </div> <!-- /service -->
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+
+                    <h3>Red Hat Certified System Administrator (RHCSA)</h3>
+					<a href="https://rhtapps.redhat.com/verify/?certId=" target="_blank">
+                    <img src="images/portfolio/rhcsa.jpg" alt="Red Hat Certified System Administrator (RHCSA) Image">
+				    </a>
+                </div>
+
+            </div> <!-- /service -->
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+
+                    <h3>DEVOPS Training Program</h3>
+					
+                </div>
+
+            </div> <!-- /service -->
+
+            <div class="service">
+
+                <span class="icon"><i class="icon-check"></i></span>
+
+                <div class="service-content">
+
+                    <h3>CCNA & MCSE Training Program</h3>
+
+                </div>
+
+            </div> <!-- /service -->
+
+        </div> <!-- /services-list -->
+
+    </div> <!-- /services-content -->
+
+</section> <!-- /services -->
+
+
+   <!-- contact
+   ================================================== -->
+<!-- contact
+   ================================================== -->
+   <section id="contact">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Contact</h5>
+            <h1>Get in Touch</h1>
+
+            <p class="lead" style="font-size: 18px; color: #555; line-height: 1.6; text-align: center;">
+				I welcome any inquiries or questions you may have. Feel free to reach out via email if you'd like to connect. <a href="mailto:?to=admin@bibin.uk&subject=Professional%20Inquiry%20from%20Your%20Website&body=Dear%20Bibin,%0A%0AI hope this message finds you well. My name is [Your Name] and I discovered your website. I am reaching out to discuss [mention the purpose of the inquiry].%0A%0AThank you for your time, and I look forward to hearing from you soon.%0A%0AKind regards,%0A[Your Name]" style="font-weight: bold; color: #007bff; text-decoration: none;">Click here to open Gmail</a>. Thank you!
+			</p>
+			
+
+
+        </div> <!-- /col-twelve -->
+
+    </div> <!-- /contact-form -->
+
+</section> <!-- /contact -->
+
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            <br>
+             Northampton, UK<br>
+             
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>admin@bibin.uk<br>			     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Mobile: (+44) 7442008971<br>
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="https://www.facebook.com/profile.php?id=100010407793977"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="https://www.linkedin.com/in/bibyn/"><i class="fa fa-linkedin"></i></a></li>
+			      <li><a href="https://instagram.com/b_ibyn?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
