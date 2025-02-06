@@ -7,6 +7,7 @@ const app = express();
 app.use(useragent.express());
 app.use(requestIp.mw());
 
+// Create Nodemailer transporter (Configure your email provider)
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -16,10 +17,12 @@ const transporter = nodemailer.createTransport({
 });
 
 app.get("/", (req, res) => {
+  // Capture the visitor's IP address, browser, and OS
   const visitorIP = req.clientIp;
   const browser = req.useragent.browser;
   const os = req.useragent.os;
 
+  // Define email content with captured data
   const mailOptions = {
     from: '"Portfolio Notification" <your-email@gmail.com>',
     to: "your-email@gmail.com",
@@ -40,6 +43,7 @@ app.get("/", (req, res) => {
     `,
   };
 
+  // Send the email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log("Error sending email:", error);
@@ -48,9 +52,11 @@ app.get("/", (req, res) => {
     }
   });
 
-  res.send("Notification sent!");
+  // Send a response to the visitor
+  res.send("Your portfolio is live! 🎉");
 });
 
+// Define the port where the server should run
 app.listen(10000, () => {
   console.log("Server running on http://localhost:10000");
 });
