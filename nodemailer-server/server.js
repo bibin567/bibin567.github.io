@@ -13,7 +13,7 @@ app.use(express.json()); // To parse incoming requests
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "bibynjoy@gmail.com", // Replace with your email
+    user: "bibinjoy2255@gmail.com", // Replace with your email
     pass: "82471ecf70d22e28af52c0f346c0869a"   // Replace with your email app password (not your real password!)
   }
 });
