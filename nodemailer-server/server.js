@@ -1,41 +1,44 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 10000;
 
 // Middleware
-app.use(express.json());
-app.use(cors()); // Allow cross-origin requests (if your frontend and backend are on different domains)
+app.use(cors());
+app.use(express.json()); // To parse incoming requests
 
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.GMAIL_USER, // Set this in your environment variables
-    pass: process.env.GMAIL_PASS, // Use an App Password instead of your actual password
-  },
+    user: "bibynjoy@gmail.com", // Replace with your email
+    pass: "82471ecf70d22e28af52c0f346c0869a"   // Replace with your email app password (not your real password!)
+  }
 });
 
-// API endpoint to send an email notification when someone visits the portfolio
-app.post("/notify", async (req, res) => {
-  try {
-    const { visitorIP, userAgent } = req.body;
+// Endpoint to send email notification when someone visits
+app.get("/", (req, res) => {
+  const visitorIP = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
 
-    const mailOptions = {
-      from: process.env.GMAIL_USER,
-      to: "bibinjoy2255@gmail.com", // Your email address
-      subject: "New Portfolio Visit Notification",
-      text: `Someone has visited your portfolio.\n\nIP Address: ${visitorIP}\nUser Agent: ${userAgent}\nTime: ${new Date().toLocaleString()}`,
-    };
+  // Email content
+  const mailOptions = {
+    from: "your-email@gmail.com",
+    to: "your-email@gmail.com", // You will receive the email
+    subject: "Portfolio Visited!",
+    text: `Someone visited your portfolio. IP: ${visitorIP}`
+  };
 
-    await transporter.sendMail(mailOptions);
-    console.log("Email sent successfully!");
-    res.status(200).send("Email sent successfully!");
-  } catch (error) {
-    console.error("Error sending email:", error);
-    res.status(500).send("Error sending email.");
-  }
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error);
+      res.status(500).send("Error sending email.");
+    } else {
+      console.log("Email sent:", info.response);
+      res.send("Email notification sent!");
+    }
+  });
 });
 
 // Start the server
