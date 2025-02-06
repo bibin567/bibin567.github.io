@@ -10,8 +10,8 @@ app.use(requestIp.mw());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "your-email@gmail.com",
-    pass: "your-app-password", // Use your App Password here
+    user: "bibinjoy2255@gmail.com",
+    pass: "olql tscs scah uyha", // Use your App Password here
   },
 });
 
