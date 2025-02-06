@@ -1,47 +1,56 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const cors = require("cors");
+const useragent = require("express-useragent");
+const requestIp = require("request-ip");
 
 const app = express();
-const PORT = 10000;
+app.use(useragent.express());
+app.use(requestIp.mw());
 
-// Middleware
-app.use(cors());
-app.use(express.json()); // To parse incoming requests
-
-// Nodemailer configuration
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "bibinjoy2255@gmail.com", // Replace with your email
-    pass: "olql tscs scah uyha"   // Replace with your email app password (not your real password!)
-  }
+    user: "your-email@gmail.com",
+    pass: "your-app-password", // Use your App Password here
+  },
 });
 
-// Endpoint to send email notification when someone visits
 app.get("/", (req, res) => {
-  const visitorIP = req.headers["x-forwarded-for"] || req.socket.remoteAddress;
+  const visitorIP = req.clientIp;
+  const browser = req.useragent.browser;
+  const os = req.useragent.os;
 
-  // Email content
   const mailOptions = {
-    from: "your-email@gmail.com",
-    to: "your-email@gmail.com", // You will receive the email
-    subject: "Portfolio Visited!",
-    text: `Someone visited your portfolio. IP: ${visitorIP}`
+    from: '"Portfolio Notification" <your-email@gmail.com>',
+    to: "your-email@gmail.com",
+    subject: "🚀 New Visitor Alert - Someone visited your portfolio!",
+    html: `
+      <div style="font-family: Arial, sans-serif; border: 2px solid #007BFF; padding: 15px; border-radius: 8px; background-color: #f4f4f4;">
+        <h2 style="color: #007BFF;">🔔 New Portfolio Visit</h2>
+        <p>Hey Bibin,</p>
+        <p>Someone just visited your portfolio website! 🎉</p>
+        <p><strong>🕒 Time:</strong> ${new Date().toLocaleString()}</p>
+        <p><strong>📍 IP Address:</strong> ${visitorIP}</p>
+        <p><strong>🖥 Browser:</strong> ${browser}</p>
+        <p><strong>💻 Operating System:</strong> ${os}</p>
+        <p><strong>🌍 Website:</strong> <a href="https://bibin567-github-io.onrender.com" target="_blank">Visit Portfolio</a></p>
+        <hr>
+        <p style="color: #555;">This is an automated notification from your website.</p>
+      </div>
+    `,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      console.error("Error sending email:", error);
-      res.status(500).send("Error sending email.");
+      console.log("Error sending email:", error);
     } else {
-      console.log("Email sent:", info.response);
-      res.send("Email notification sent!");
+      console.log("Email sent successfully:", info.response);
     }
   });
+
+  res.send("Notification sent!");
 });
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(10000, () => {
+  console.log("Server running on http://localhost:10000");
 });
